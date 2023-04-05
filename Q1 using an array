@@ -32,10 +32,19 @@ class Stack {
     }
     int peek() {
       if (isEmpty()) {
-        std::cout << "Error: Stack is empty!\n";
+        std::cout << "Stack Underflow\n";
         return -1; // error value
       }
       return arr[top];
     }
+    void display(){
+        if (isEmpty()) {
+        std::cout << "Stack Underflow\n";
+        }else{
+            for(int i=0; i< size; i++){
+                std::cout << arr[i] << " ";
+            }
+        }
+        
+    }
 };
-
