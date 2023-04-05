@@ -53,4 +53,11 @@ public:
             return poppedValue;
         }
     }
+    int peek() {
+      if (isEmpty()) {
+        std::cout << "Stack Underflow\n";
+        return -1; 
+      }
+      return top->data;
+    }
 };
