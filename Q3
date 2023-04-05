@@ -137,7 +137,7 @@ void testArrayStack() {
   s.push(1);
   s.display();
   auto end = std::chrono::high_resolution_clock::now();
-  cout << "Time taken for push operations using array: " << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() << " microseconds\n";
+  cout << "Time taken using array: " << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() << " microseconds\n";
 }
 
 void testListStack() {
@@ -165,7 +165,7 @@ void testListStack() {
   s.push(1);
   s.display();
   auto end = std::chrono::high_resolution_clock::now();
-  cout << "Time taken for push operations using array: " << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() << " microseconds\n";}
+  cout << "Time taken using linkedList: " << std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() << " microseconds\n";}
   
   
   int main() {
